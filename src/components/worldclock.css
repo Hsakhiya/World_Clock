@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, sans-serif; /* Set the font style for the entire application */
+  height: 100%; /* Ensure the body takes the full height of the viewport */
+  width: 100%;
+  display: flex; /* Use flexbox to center the grid */
+  align-items: center;
+  overflow: hidden; /*Prevent scrolling*/
+}
+
+.container {
+  position: relative;
+  display: flex; /* Use flexbox for centering content */
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /*Full height of the viewport */
+  width: 100vw; /*Full width of the viewport */
+  background-color: #1d1d1f; /* Background color */
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+  padding: 20px;
+  /* margin: 20px; */
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 100%;
+  align-items: center;
+  background-color: #d1e9f0; /* Green background */
+  color: white; /* White text */
+  border-radius: 5px; /* Rounded corners */
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(3, 1fr); /*3 equal rows */
+  height: 80%; /* Full height of the viewport */
+  width: 100%; /* Full width of the viewport */
+  grid-gap: 15px; /* Space between grid items */
+}
+
+.grid-item {
+  display: flex; /* Use flexbox for centering text */
+  flex-direction: column;
+  align-items: center; /* Center text vertically */
+  background-color: #d1e9f0; /* Green background */
+  color: white; /* White text */
+  border-radius: 5px; /* Rounded corners */
+  justify-content: center; /* Center text horizontally */
+}
+
+.cityName {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #4a4a8c;
+}
+
+
+.cityTime {
+    font-size: 50px;
+    font-weight: 700;
+    color: #333;
+}
+
+.topCityName {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #4a4a8c;
+}
+
+.topCityTime {
+  font-size: 100px;
+  font-weight: 700;
+  color: #333;
+}
+
+.fullscreen-icon {
+    position: absolute; /* Position the icon absolutely within the container */
+    top: 30px; /* Distance from the top */
+    right: 30px; /* Distance from the right */
+    font-size: 24px; /* Icon size */
+    color: black; /* Icon color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.fullscreen-icon:hover {
+    color: red; /* Change color on hover */
+}
